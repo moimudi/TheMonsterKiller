@@ -212,10 +212,24 @@ function healPlayerHandler() {
 }
 
 function printLogHandler() {
-  //for (;;)  //loop for ever...be careful!
+  //for (;;) //loop for ever...be careful!
+
   for (let i = 0; i < 3; i++) {
     console.log('Yolla');
   }
+
+  let j = 0;
+  while (j < 3) {
+    console.log(j);
+    j++;
+  }
+  // execute loop body before the condition is checked ... we use do while loop
+  let x = 5;
+  do {
+    console.log(x);
+    x--;
+  } while (x > 2);
+
   for (let i = 0; i < battleLog.length; i++) {
     console.log(battleLog[i]);
   }
@@ -250,6 +264,17 @@ attackBtn.addEventListener('click', attackHandler);
 strongAttackBtn.addEventListener('click', strongAttackHandler);
 healBtn.addEventListener('click', healPlayerHandler);
 logBtn.addEventListener('click', printLogHandler);
+
+let randomNumbers = [];
+let finished = false;
+while (!finished) {
+  const rndNumber = Math.random();
+  randomNumbers.push(rndNumber);
+  if (rndNumber > 0.5) {
+    finished = true;
+    console.log(randomNumbers);
+  }
+}
 
 // const userInput = '';
 // undefined
