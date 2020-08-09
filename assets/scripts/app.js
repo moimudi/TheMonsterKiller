@@ -212,6 +212,20 @@ function healPlayerHandler() {
 }
 
 function printLogHandler() {
+  //for (;;)  //loop for ever...be careful!
+  for (let i = 0; i < 3; i++) {
+    console.log('Yolla');
+  }
+  for (let i = 0; i < battleLog.length; i++) {
+    console.log('Tallinn');
+  }
+  for (let i = 10; i > 0; i--) {
+    console.log(i);
+  }
+  for (let i = 10; i > 0; ) {
+    i--;
+    console.log(i);
+  }
   console.log(battleLog);
 }
 
