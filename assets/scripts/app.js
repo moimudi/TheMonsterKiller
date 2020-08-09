@@ -177,3 +177,41 @@ attackBtn.addEventListener('click', attackHandler);
 strongAttackBtn.addEventListener('click', strongAttackHandler);
 healBtn.addEventListener('click', healPlayerHandler);
 logBtn.addEventListener('click', printLogHandler);
+
+
+// const userInput = '';
+// undefined
+// const isValidInput = !!userInput
+// undefined
+// isValidInput
+// false
+// !!userInput
+// false
+// userInput
+// ""
+// const userName = userInput || 'Max';
+// undefined
+// userName
+// "Max"
+// const realUserInput = 'Manu';
+// undefined
+// const realUserName = realUserInput || 'Max';
+// undefined
+// realUserName
+// "Manu"
+// let isLoggedIn = true;
+// undefined
+// const shoppingCart = isLoggedIn && ['Books']
+// undefined
+// shoppingCart
+// ["Books"]
+// isLoggedIn = false;
+// false
+// isLoggedIn && ['Books']
+// false
+// null && ['Books']
+// null
+// isLoggedIn = true;
+// true
+// isLoggedIn && ''
+// ""
