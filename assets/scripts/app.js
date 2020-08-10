@@ -280,6 +280,13 @@ while (!finished) {
   }
 }
 
+for (let z = 0; z < 5; z++) {
+  if (z === 3) {
+    continue;
+  }
+  console.log(z);
+}
+
 // const userInput = '';
 // undefined
 // const isValidInput = !!userInput
