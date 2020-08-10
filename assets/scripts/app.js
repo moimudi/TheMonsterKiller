@@ -219,6 +219,19 @@ function printLogHandler() {
     console.log('Yolla');
   }
 
+  let s = 0;
+  outerWhile: do {
+    console.log('Outer', s);
+    innerFor: for (let k = 0; k < 5; k++) {
+      if (k === 3) {
+        break outerWhile;
+        // continue outerWhile; // dangerous! => Infinite loop!
+      }
+      console.log('Inner', k);
+    }
+    s++;
+  } while (s < 3);
+
   let j = 0;
   while (j < 3) {
     console.log(j);
