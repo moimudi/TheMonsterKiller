@@ -36,6 +36,7 @@ try {
 // } finally {
 //   alert('finally');
 // }
+}
 
 
 let currentMonsterHealth = chosenMaxLife;
@@ -279,6 +280,7 @@ function printLogHandler() {
     i++;
   }
 }
+
 // let i = 0;
 // for (const logEntry of battleLog) {
 //   console.log(logEntry);
@@ -371,3 +373,5 @@ for (let z = 0; z < 5; z++) {
 // const enteredValue = ''; // let's assume this is set based on some input provided by the user, therefore it might be an empty string
 // const userName = enteredValue || 'PLACEHOLDER'; // will assign 'PLACEHOLDER' if enteredValue is an empty string
 // console.log(userName);
+
+
